@@ -1,0 +1,83 @@
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fullscreen black background */
+html,
+body {
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* App container */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h5 {
+  font-size: 3rem;
+  margin: 32px;
+  color: white;
+  align-self: flex-end;
+}
+
+/* Grid for number buttons */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Styling for the number buttons */
+.num-button {
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.num-button:hover {
+  background-color: #808080;
+}
+
+.num-button:active {
+  background-color: #ccc;
+}
+
+.operation-button {
+  background-color: gray;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.operation-button:hover {
+  background-color: #595454;
+}
+
+.operation-button:active {
+  background-color: #ccc;
+}
+
+.helper {
+  color: white;
+}
